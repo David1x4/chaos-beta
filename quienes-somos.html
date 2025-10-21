@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes Somos - CHAOS COMPANY</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="img/logo oscuro.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recycling.css">
+    <link rel="icon" href="img/ChatGPT Image 1 oct 2025, 04_01_50 p.m..png">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top site-header">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">
+          <img class="cabeza" src="img/ChatGPT Image 3 oct 2025, 12_53_05 p.m..png" alt="Logo Chaos Company">
+          <span class="brand">Chaos Company</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto main-nav">
+
+            <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quienes somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="medio-ambiente.html">Medio ambiente</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contactos.html">Contáctanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="Educacion.html">Escaner</a></li>
+          </ul>
+          <div class="utils ms-3">
+            <button class="btn btn-donate" data-bs-toggle="modal" data-bs-target="#donationModal">
+              <i class="fas fa-heart"></i> Donar
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="container my-5">
+        <div class="rounded-box bg-light-green p-4 d-flex align-items-center">
+            <img src="img/logoclaro.png" alt="Logo de CHAOS COMPANY" class="rounded-circle me-4" style="width: 150px; height: 150px;">
+            <div>
+                <h2><i class="fas fa-users"></i> Sobre Nosotros</h2>
+                <p>CHAOS COMPANY es una organización dedicada a promover la conciencia ambiental y el reciclaje. Nuestro equipo apasionado trabaja incansablemente para educar y motivar a las comunidades a adoptar prácticas sostenibles que protejan nuestro planeta para las futuras generaciones. </p>
+                <dl>
+                  <dt style="font-family: fantasy;">C</dt><dd>Cuidar el ambiente</dd>
+                  <dt style="font-family: fantasy;">H</dt><dd>Hayar soluciones</dd>
+                  <dt style="font-family: fantasy;">A</dt><dd>Atención a espacios públicos</dd>
+                  <dt style="font-family: fantasy;">O</dt><dd>Orientados a un futuro sostenible</dd>
+                  <dt style="font-family: fantasy;">S</dt><dd>Sanar al planeta</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizational Chart -->
+    <section class="container my-5">
+        <h2 class="text-center"><i class="fas fa-users-cog"></i> Nuestro Equipo</h2>
+        <div class="org-chart">
+            <!-- Top level -->
+            <div class="org-member top">
+                <img src="img/member1.jpg" alt="Director" class="rounded-circle">
+                <h5>David Castiblanco</h5>
+                <p>Director Ejecutivo</p>
+            </div>
+            <!-- Second level -->
+            <div class="org-level">
+                <div class="org-member">
+                    <img src="img/member2.jpg" alt="Gerente" class="rounded-circle">
+                    <h5>Andres Ojeda</h5>
+                    <p>Gerente de Proyectos</p>
+                </div>
+                <div class="org-member">
+                    <img src="img/member3.jpg" alt="Coordinadora" class="rounded-circle">
+                    <h5>Andres Galvis</h5>
+                    <p>Coordinadora Ambiental</p>
+                </div>
+            </div>
+            <!-- Third level -->
+            <div class="org-level">
+                <div class="org-member">
+                    <img src="img/member4.jpg" alt="Especialista" class="rounded-circle">
+                    <h5>Dilan Rodríguez</h5>
+                    <p>Especialista en Reciclaje</p>
+                </div>
+                <div class="org-member"> 
+                    <img src="img/member5.jpg" alt="Comunicadora" class="rounded-circle">
+                    <h5>Santiago Coy</h5>
+                    <p>Comunicadora Digital</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Embed -->
+    <section class="container my-5">
+        <h2 class="text-center"><i class="fas fa-history"></i> Nosotros</h2>
+        <div class="video-container position-relative">
+            <div class="ratio ratio-16x9">
+                <iframe id="videoIframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video sobre CHAOS COMPANY" allowfullscreen style="display: none;"></iframe>
+                <div id="videoThumbnail" class="video-thumbnail" style="background-image: url('img/video-thumb.jpg');">
+                    <button id="playButton" class="play-button">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Donation Modal -->
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="donationModalLabel"><i class="fas fa-hand-holding-heart"></i> Apoya Nuestra Causa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Tu donación nos ayuda a continuar nuestra misión de promover la conciencia ambiental. ¡Cada contribución cuenta!</p>
+            <div class="accordion" id="donationMethods">
+              <!-- PayPal -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="paypal-heading">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paypal-collapse" aria-expanded="true" aria-controls="paypal-collapse">
+                    <i class="fab fa-paypal me-2"></i> PayPal
+                  </button>
+                </h2>
+                <div id="paypal-collapse" class="accordion-collapse collapse show" aria-labelledby="paypal-heading" data-bs-parent="#donationMethods">
+                  <div class="accordion-body">
+                    <p>Haz clic en el botón para donar de forma segura a través de PayPal.</p>
+                    <a href="#" class="btn btn-primary"><i class="fab fa-paypal"></i> Donar con PayPal</a>
+                  </div>
+                </div>
+              </div>
+              <!-- QR Code -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="qr-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qr-collapse" aria-expanded="false" aria-controls="qr-collapse">
+                    <i class="fas fa-qrcode me-2"></i> Código QR
+                  </button>
+                </h2>
+                <div id="qr-collapse" class="accordion-collapse collapse" aria-labelledby="qr-heading" data-bs-parent="#donationMethods">
+                  <div class="accordion-body text-center">
+                    <p>Escanea este código con tu app de pagos móviles.</p>
+                    <img src="img/qr-placeholder.png" alt="Código QR para donación" class="img-fluid" style="max-width: 200px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1 - Logo -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                       
+                        <h4 class="mb-0">Chaos Company</h4>
+                    </div>
+                    <p class="text-light">Conciencia Ecologica y Ambienta</p>
+                </div>
+                
+                <!-- Column 2 - Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#identification">Identificación de Materiales</a></li>
+                        <li><a href="#education">Educación sobre Reciclaje</a></li>
+                        <li><a href="#about">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 - Resources -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Recursos</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Guía de Reciclaje</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 - Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Contáctanos</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li class="d-flex align-items-center mb-2">
+                            <a href="https://www.facebook.com/share/175mGAjNgq/" class="text-white me-3 social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/CHAOS_777_?t=3xqnc3635geahChL-fGJpA&s=09" class="text-white me-3 social-link"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.instagram.com/grupo_chaos777?igsh=Y3YwZGpvcDVnaHpn" class="text-white social-link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fa-solid fa-phone me-2"></i>
+                            <span>+57 3124020283</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fa-solid fa-location-dot me-2"></i>
+                            <span>Calle Verde 123, Ciudad Eco</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-top border-secondary pt-4 mt-4 text-center text-light">
+                <p style="color: white;">Hecho con ❤️ para un futuro sostenible</p>
+                <p style="color: white;" class="mb-0">© 2025 Chaos Company    </p>
+            </div>
+
+          <div class="border-top border-secondary pt-4 mt-4 text-center text-light">
+                 <a href="#" class="text-white d-block footer-link" style="text-decoration: none;">Condiciones de Uso</a> 
+                    <a href="#" class="text-white d-block footer-link" style="text-decoration: none;">Política de Privacidad</a>
+                    <a href="#" class="text-white d-block footer-link" style="text-decoration: none;">Anuncios Basados en Tu Interés</a>    
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
